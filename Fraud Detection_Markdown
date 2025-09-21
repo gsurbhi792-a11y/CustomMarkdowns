@@ -1,0 +1,23 @@
+# Fraud Detection — <project-name>
+
+
+**Problem statement:** Identify fraudulent transactions in real time to reduce chargebacks and customer friction.
+
+
+**Primary metric:** Precision at recall X (e.g., Precision@0.8 recall), or Precision@K, AUC-ROC as secondary.
+
+
+**Data sources:**
+- Transaction logs (DB: transactions)
+- User account metadata
+- Historical chargebacks/fraud labels
+- Third-party signals (IP reputation, device fingerprinting)
+
+
+**Validation:** Time-based split (train up to T, validate from T to T+window, test on most recent period). Use nested CV for model selection if non-temporal features only.
+
+
+**Baseline model:** Logistic regression with class weighting + simple rule-based filters.
+
+
+**Deployment:** Low-latency scoring endpoint (≤ 50ms) + batch scoring for nightly investigations.
