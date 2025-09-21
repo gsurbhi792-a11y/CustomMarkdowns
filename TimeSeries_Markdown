@@ -1,0 +1,19 @@
+# Time-Series Forecasting — <project-name>
+
+
+**Problem statement:** Forecast metric X (demand/sales/CPU load) at horizon H (e.g., 1 day / 1 hour / 12 weeks) to support planning.
+
+
+**Primary metric:** MAPE / sMAPE / MAE / RMSE depending on scale and business tolerance.
+
+
+**Data sources:**
+- Historical time series (transaction counts, sales) with timestamps
+- Calendar features (holidays, promotions)
+- Exogenous features: weather, price, marketing spend
+
+
+**Validation:** Rolling-origin (time series cross-validation) with gap to avoid leakage.
+
+
+**Baseline:** Naive (last period), seasonal naïve, or simple ETS/ARIMA.
