@@ -1,0 +1,19 @@
+# Project: <project-name>
+**Owner:** <name / team>
+**Start date:** <YYYY-MM-DD>
+**Status:** [Draft|In Progress|Review|Deployed]
+
+
+## Goal
+Short: <one-sentence goal>
+
+
+## Success metrics
+- Primary: <e.g., ROC AUC, Precision@K, MAPE>
+- Business KPI(s): <e.g., fraud $ saved / month, CTR uplift, reduced SLA violations>
+
+
+## Constraints
+- Latency: <ms>
+- Privacy/PII rules: <GDPR, HIPAA, etc.>
+- Infra: <batch / real-time>
