@@ -1,0 +1,22 @@
+# Recommender — <project-name>
+
+
+**Problem statement:** Increase relevant content discovery and conversions through personalized recommendations.
+
+
+**Primary metrics:** CTR, conversion rate, revenue per user, recall@K / NDCG@K (offline).
+
+
+**Data sources:**
+- User-item interaction logs (clicks, views, purchases)
+- Catalog metadata (item ids, categories, price)
+- User profile data (demographics, preferences)
+
+
+**Validation:** Time-aware train/test split (e.g., last 7–14 days as holdout); use session-level splits for session-based models.
+
+
+**Baseline:** Popularity-based recommendations or simple collaborative filtering (item-item).
+
+
+**Deployment:** Batch top-K generation + real-time reranking when necessary.
